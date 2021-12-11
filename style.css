@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+}
+
+.main__containter {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main__hp-line {
+  width: 20%;
+  height: 100vh;
+  background-color: lightpink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__lines {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 80%;
+  height: 100vh;
+}
+
+.main__line {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 25%;
+  width: 100%;
+  border: 1px solid black;
+  background-color: lightgreen;
+  position: relative;
+}
+
+.running-man {
+  position: absolute;
+  animation-duration: 5s;
+  animation-name: rightToLeft;
+  animation-name: rightToLeft;
+
+}
+
+
+@keyframes rightToLeft {
+  from {
+    right: 0;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+.main__hp {
+  font-size: 20px;
+  font-weight: 800;
+
+}
